@@ -7,21 +7,21 @@ export default defineConfig({
     react(),
     vitePluginImp({
       libList: [
-        {
-          libName: 'antd',
-          style: (name) => `antd/lib/${name}/style/index.less`,
-        },
+        // {
+        //   libName: 'antd',
+        //   style: (name) => `antd/lib/${name}/style/index.less`,
+        // },
       ],
     }),
   ],
   css: {
     preprocessorOptions: {
       less: {
-        javascriptEnabled: true,
-        modifyVars: {
-          'primary-color': '#483D8B',
-          'link-color': '#ff704c',
-          'border-radius-base': '4px',
+        lessOptions: {
+          modifyVars: {
+            '@brand-color': '#ebb105',
+          },
+          javascriptEnabled: true,
         },
       },
     },
