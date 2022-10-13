@@ -12,5 +12,3 @@ yarn dev
 ```
 ### 搭建文档
 请查看https://github.com/wuqiren/blog/issues/7
-
-
